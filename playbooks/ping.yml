@@ -4,4 +4,11 @@
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
-        
+
+- name: Cear archivo
+  hosts: node1
+  tasks:
+    - name: Crear PEPE
+      ansible.builtin.command:
+        touch /home/ansible/pepe.txt
+
