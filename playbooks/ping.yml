@@ -1,0 +1,7 @@
+---
+- name: Primer play - Ping
+  hosts: node1
+  tasks:
+    - name: Ping all hosts
+      ansible.builtin.ping:
+        
