@@ -13,6 +13,6 @@
   tags: 
     - prod
   tasks:
-    - name: Crear PEPE
+    - name: Crear PEPE v2
       ansible.builtin.command:
         touch /home/ansible/PROD-pepe.txt
