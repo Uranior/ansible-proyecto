@@ -1,6 +1,7 @@
 ---
 - name: Primer play - Ping
   hosts: all
+  become: true
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
@@ -10,6 +11,7 @@
 
 - name: Cear archivo
   hosts: pr-webservers, pr-filesystem
+  become: true
   tasks:
     - name: Crear PEPE
       ansible.builtin.command:
