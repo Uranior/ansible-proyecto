@@ -1,6 +1,6 @@
 ---
 - name: Primer play - Ping
-  hosts: webserver01
+  hosts: pr-webserver01
   become: true
   tasks:
     - name: Ping all hosts
@@ -10,7 +10,7 @@
     - dev
 
 - name: Cear archivo
-  hosts: webserver01
+  hosts: pr-webserver01
   become: true
   tasks:
     - name: Crear PEPE
