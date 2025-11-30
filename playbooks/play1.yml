@@ -1,12 +1,12 @@
 ---
 - name: Primer play - Ping
-  hosts: node1
+  hosts: all
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
 
 - name: Cear archivo
-  hosts: node1
+  hosts: all
   tasks:
     - name: Crear PEPE
       ansible.builtin.command:
