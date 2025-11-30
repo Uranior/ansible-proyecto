@@ -4,11 +4,13 @@
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
+  tags: prod, dev
 
 - name: Cear archivo
-  hosts: all
+  hosts: pr-webservers, pr-filesystem
   tasks:
     - name: Crear PEPE
       ansible.builtin.command:
-        touch /home/ansible/pepe.txt
-
+        touch /home/ansible/PROD-pepe.txt
+  tags: prod
+  
