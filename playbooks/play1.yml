@@ -1,6 +1,6 @@
 ---
 - name: Primer play - Ping
-  hosts: all
+  hosts: production, development
   tags: 
     - prod
     - dev
