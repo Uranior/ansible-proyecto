@@ -1,8 +1,6 @@
 ---
 - name: Primer play - Ping
   hosts: pr-webserver01
-  remote_user: ansible
-  become: true
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
@@ -12,8 +10,6 @@
 
 - name: Cear archivo
   hosts: pr-webserver01
-  remote_user: ansible
-  become: true
   tasks:
     - name: Crear PEPE
       ansible.builtin.command:
